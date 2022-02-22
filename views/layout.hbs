@@ -12,16 +12,19 @@
 
   <body>
 
-    <nav>
-      <a href="/celebrities/create">Añadir Celebrity</a>
-      <a href="/celebrities">Todas las celebrities</a>
-      <a href="/movies">Todas las movies</a>
-      <a href="/movies/create">Añadir Movie</a>
-    </nav>
+    
+  <nav id='menu'>
+    <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <ul>
+      <li><a href='/celebrities'>Celebrities</a></li>    
+      <li><a href='/celebrities/create'>Añadir Celebrity</a></li>    
+      <li><a href='/movies'>Películas</a></li>
+      <li><a href='/movies/create'>Añadir Película</a></li>
+    </ul>
+  </nav>
 
-    <div class="container">
-      {{{body}}}
-    </div>
+     {{{body}}}
+    
 
     <script src="/javascripts/script.js"></script>
   </body>

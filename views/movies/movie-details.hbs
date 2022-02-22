@@ -1,9 +1,9 @@
-<h2>Datos de la película:</h2>
+<h2 class="margin">Datos de la película:</h2>
 
 
 <div class="card" >
     <div class="card-header">
-        <h4>Title: {{oneMovie.title}}</h4>
+        <h4>Título: {{oneMovie.title}}</h4>
     </div>
     
     <div class="card-body">
@@ -16,15 +16,14 @@
         <p>Cast: {{this.name}}, {{this.occupation}}, {{this.catchPhrase}}</p>
         {{/each}}
 
-        <a href="/movies/{{oneMovie._id}}/edit">
-            <button class="btn btn-outline-warning">Actualizar Movie</button>
-        </a>
+        <div class="twoButtons">
+            <a href="/movies/{{oneMovie._id}}/edit">
+                <button class="btn btn-outline-warning">Actualizar Movie</button>
+            </a>
 
-        <form action="/movies/{{oneMovie._id}}/delete" method="POST">
-            <button class="btn btn-outline-danger">Borrar Movie</button>
-        </form>
+            <form action="/movies/{{oneMovie._id}}/delete" method="POST">
+               <button class="btn btn-outline-danger">Borrar Movie</button>
+            </form>
+        </div>
     </div>
-    
-   
-
 </div>
